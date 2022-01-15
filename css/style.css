@@ -12,15 +12,19 @@ body {
 .container {
   max-width: 1440px;
   margin: 0px auto;
-  padding: 50px 100px;
+  padding: 40px 100px;
 }
 
+/* ====================
+=====header section====
+======================*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 120px;
 }
+
 .site-name {
   color: #3a3a3a;
   font-size: 24px;
@@ -39,6 +43,10 @@ nav {
   color: #3a3a3a;
   font-weight: 600;
 }
+
+/* ===================
+====banner section====
+=====================*/
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,7 +58,7 @@ nav {
   align-items: flex-start;
 }
 .banner-left h1 {
-  font-size: 52px;
+  font-size: 50px;
   color: #3a3a3a;
   line-height: 70px;
 }
@@ -81,7 +89,148 @@ nav {
 }
 .banner-right img {
   width: 440px;
+  height: 414px;
   background-image: url(/images/Circle\ design.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 94%;
+}
+
+/* =====================
+=======logo section=====
+======================*/
+hr {
+  opacity: 20%;
+  width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo img {
+  padding: 35px 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    justify-content: center;
+  }
+}
+
+/*===================================== 
+=======populer collection section======
+=====================================*/
+.populer-collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.populer-collection > h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.product {
+  /* width: 329px;
+  height: 476px; */
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.product h2 {
+  color: #18191f;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 16px;
+}
+.product h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.product-ratings {
+  display: flex;
+  align-items: center;
+}
+/* .product div {
+  display: flex;
+  align-items: center;
+} */
+.stars {
+  margin-right: 11px;
+}
+.fa-star,
+.fa-star-half-alt {
+  font-size: 11px;
+}
+.fa-star.fillid {
+  color: #ffc014;
+}
+.fa-star-half-alt.half-fillid {
+  color: #ffc014;
+}
+.product p {
+  font-size: 14px;
+  line-height: 143%;
+  color: #787885;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.populer-collection > h4 {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+/* =================
+========footer======
+==================*/
+footer {
+  height: 240px;
+  background: #0a0826;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-info h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+}
+.footer-info h3,
+p {
+  margin-bottom: 10px;
+}
+
+.fab {
+  margin: 0 16px;
+  font-size: 25px;
+  color: #d9dbe1;
 }
