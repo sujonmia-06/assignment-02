@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  animation: glow 30s linear infinite running;
+  animation: glow 60s linear infinite running;
 }
 
 .container {
